@@ -10,11 +10,11 @@ public class MainThread {
         System.out.println("Thread id : " + t.getId());
         System.out.println("After name change : " + t);
 
-        // 创建新的子线程1
+        // 创建新的子线程 A
         NewThread1 t1 = new NewThread1("Thread1");
 
 
-        // 创建新的子线程2
+        // 创建新的子线程 B
         NewThread2 t2 = new NewThread2("Thread2");
 
         // 创建新的子线程3
@@ -27,6 +27,5 @@ public class MainThread {
         } catch (InterruptedException e) {
             System.out.println("Main thread interrupted");
         }
-
     }
 }
